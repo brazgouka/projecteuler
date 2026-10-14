@@ -1,0 +1,15 @@
+# Virtual environments
+venv/
+.venv/
+
+# Python
+__pycache__/
+*.py[cod]
+
+# IDE / OS
+.idea/
+.vscode/
+.DS_Store
+
+# Local scratch (not Project Euler)
+test.py
