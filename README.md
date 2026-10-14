@@ -2,9 +2,7 @@
 
 My Python solutions to [Project Euler](https://projecteuler.net/) problems.
 
-- `pNN.py`: solution to problem NN
-- `projecteuler.py`: problem 17 (number letter counts)
-- `22.txt`, `42.txt`: input data for problems 22 and 42
+`pNN.py`: solution to problem NN
 
 ## Setup
 
