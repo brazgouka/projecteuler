@@ -2,7 +2,7 @@
 
 My Python solutions to [Project Euler](https://projecteuler.net/) problems.
 
-`pNN.py`: solution to problem NN
+`problems/pNN.py`: solution to problem NN
 
 ## Setup
 
@@ -10,5 +10,5 @@ My Python solutions to [Project Euler](https://projecteuler.net/) problems.
 python3 -m venv venv
 source venv/bin/activate
 pip install -r requirements.txt
-python p15.py
+python problems/p15.py
 ```

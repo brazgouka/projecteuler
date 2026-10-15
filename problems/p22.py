@@ -1,4 +1,6 @@
-with open('22.txt', 'r') as content_file:
+from pathlib import Path
+
+with open(Path(__file__).with_name('22.txt'), 'r') as content_file:
     content = content_file.read()
     content = content.replace('"', '')
     content = ','.join(sorted(content.split(',')))

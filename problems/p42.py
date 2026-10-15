@@ -1,3 +1,5 @@
+from pathlib import Path
+
 import math
 
 
@@ -14,7 +16,7 @@ def solve_quadratic(a, b, c):
         x2 = (-b - math.sqrt(d)) / (2 * a)
         return (x1, x2)
 
-with open('42.txt', 'r') as content_file:
+with open(Path(__file__).with_name('42.txt'), 'r') as content_file:
     content = content_file.read()
     content = content.replace('"', '')
     content = ','.join(sorted(content.split(',')))
