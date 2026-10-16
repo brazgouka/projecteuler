@@ -1,17 +1,19 @@
 max_repeat = 0
 answer = 0
 
+
 for d in range(2, 1000):
-    nulls = len(str(d))
-    delim = int("1" + "0" * nulls)
-    rest = -1
-    num = 0
-    while rest not in (0, 1):
-        rest = delim % d
-        num += 1
-        if str(rest) == str(delim)[0]:
+    prev = []
+    rest = 1
+    while rest != 0:
+        rest *= 10**len(str(d))
+        if rest in prev:
             break
-        delim = int(str(rest) + "0" * nulls)
-    print(d, num)
+        prev.append(rest)
+        rest = rest % d
+    if rest != 0:
+        lena = len(prev[:prev.index(rest)]) or len(prev)
+        if lena > max_repeat:
+            answer, max_repeat = d, lena
 
-
+print(answer)
