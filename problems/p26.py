@@ -1,7 +1,6 @@
 max_repeat = 0
 answer = 0
 
-
 for d in range(2, 1000):
     prev = []
     rest = 1
